@@ -118,16 +118,17 @@ Epoxy Floor
 
 ------------------------------------------run firebase w/ react-------------------------------------------
 https://medium.com/swlh/how-to-deploy-a-react-app-with-firebase-hosting-98063c5bf425
+https://www.youtube.com/watch?v=1wZw7RvXPRU&t=10s&ab_channel=CleverProgrammer
    
-install react app - npx create-react-app app
+1) install react app : npx create-react-app app
 
-in new app directory initialize firebase - firebase init
-    *in order for firebase to work with react the public directory needs to be
-     set to "build"
+2) same directory initialize firebase : firebase init
+    **in order for firebase to work with react the public directory needs to be
+    set to "build"**
 
-initialize the build folder - npm run build
+3) initialize the build folder - npm run build
 
-should be ready to deploy
+should be ready to deploy/emulate
 
 ----------------------------------------------------SEO---------------------------------------------------
 Original - homestead.com
