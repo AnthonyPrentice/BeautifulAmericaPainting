@@ -4,11 +4,11 @@ import {BrowserRouter as Router, Routes, Route} from "react-router-dom"
 
 //pages
 import Home from "./pages/Home"
-import InteriorServices from "./pages/InteriorServices"
-import ExteriorServices from "./pages/ExteriorServices"
+import Services from "./pages/Services"
 import About from "./pages/About"
 import Gallery from "./pages/Gallery"
 import NotFound from "./pages/NotFound"
+import Estimate from "./pages/Estimate"
 
 //components
 import Header from "./components/Header"
@@ -29,13 +29,13 @@ function App() {
                 <Routes>
                     <Route path="/" element={<Home />} />
 
-                    <Route path="/Interior_Services" element={<InteriorServices />} />
-
-                    <Route path="/Exterior_Services" element={<ExteriorServices />} />
+                    <Route path="/Services" element={<Services />} />
 
                     <Route path="/About" element={<About />} />
 
                     <Route path="/Gallery" element={<Gallery />} />
+
+                    <Route path="/Estimate" element={<Estimate />} />
 
                     <Route path="*" element={<NotFound />} />
                 </Routes>
