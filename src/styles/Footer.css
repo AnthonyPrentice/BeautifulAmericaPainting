@@ -1,9 +1,22 @@
 .footer-wrapper{
-    background-color: rgb(122,171, 235);
+    padding: 0;
+    margin: 0;
+    height: 210px;
+    width: 100vw;
+}
+
+.pre-footer {
+    background-color: rgb(58, 58, 58);
+    padding: 0;
+    margin: 0;
+    height: 175px;
+    width: 100vw;
+}
+
+.footer {
+    background-color: white;
     padding: 0;
     margin: 0;
     height: 35px;
     width: 100vw;
-    position: absolute;
-    bottom: 0px;
 }

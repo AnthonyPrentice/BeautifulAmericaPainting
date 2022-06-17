@@ -22,26 +22,24 @@ function App() {
     return (
         <div className="app">
             <Router>
-                <header>
-                    <Header />
-                    <NavBar />
-                </header>
-                <Routes>
-                    <Route path="/" element={<Home />} />
+                <Header />
+                <NavBar />
+                <div className="content">
+                    <Routes>
+                        <Route path="/" element={<Home />} />
 
-                    <Route path="/Services" element={<Services />} />
+                        <Route path="/Services" element={<Services />} />
 
-                    <Route path="/About" element={<About />} />
+                        <Route path="/About" element={<About />} />
 
-                    <Route path="/Gallery" element={<Gallery />} />
+                        <Route path="/Gallery" element={<Gallery />} />
 
-                    <Route path="/Estimate" element={<Estimate />} />
+                        <Route path="/Estimate" element={<Estimate />} />
 
-                    <Route path="*" element={<NotFound />} />
-                </Routes>
-                <footer>
-                    <Footer />
-                </footer>
+                        <Route path="*" element={<NotFound />} />
+                    </Routes>
+                </div>
+                <Footer />
             </Router>
         </div>
   );

@@ -4,7 +4,12 @@ import "../styles/Footer.css"
 function Footer(){
     return (
         <div className="footer-wrapper">
-            this is inside footer
+            <div className="pre-footer">
+
+            </div>
+            <div className="footer">
+
+            </div>
         </div>
     );
 }
