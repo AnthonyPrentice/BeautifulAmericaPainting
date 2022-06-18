@@ -129,7 +129,9 @@ https://www.youtube.com/watch?v=1wZw7RvXPRU&t=10s&ab_channel=CleverProgrammer
 
 3) install React Router for path Navigation - npm install react-router-dom
 
-4) initialize the build folder - npm run build
+4) install meta tags for meta info - npm install react-meta-tags
+
+5) initialize the build folder - npm run build
 
 should be ready to deploy/emulate
 
