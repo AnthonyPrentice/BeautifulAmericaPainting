@@ -131,28 +131,8 @@ https://www.youtube.com/watch?v=1wZw7RvXPRU&t=10s&ab_channel=CleverProgrammer
 
 4) install meta tags for meta info - npm install react-meta-tags
 
+5) install needed icons - npm install react-icons
+
 5) initialize the build folder - npm run build
 
 should be ready to deploy/emulate
-
-----------------------------------------------------SEO---------------------------------------------------
-Original - homestead.com
-
-Concerns
-    Keep SEO - Domains are safely transferred
-    Improve Website, Not break
-
-Functionality 
-    Keep hosting analytical tools
-    Keep domain the same
-
-Goals
-    Improve google ranking
-
-1. Firebase local server
-  *Evaluate usability
-
-2. Attach my domain to server
-
-3. Migrate 
-
