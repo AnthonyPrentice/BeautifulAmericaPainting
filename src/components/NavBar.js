@@ -18,7 +18,7 @@ function NavBar() {
     });
 
     function BarsMenuClicked() {
-        if(BarsMenu.barsMenu == "hidden") {
+        if(BarsMenu.barsMenu === "hidden") {
             setBarsMenu(prevBarsMenu => ({
                 ...prevBarsMenu,
                 barsIcon: "hidden",
@@ -38,13 +38,13 @@ function NavBar() {
     return (
         <div className="navbar-wrapper">
             <div className="navbar">
-                <img src={Logo} className="logo" width="150" height="75"/>
+                <img src={Logo} className="logo" width="150" height="75" alt="Logo"/>
                 <NavLink className="navbar-links" to="/">Home</NavLink>
                 <NavLink className="navbar-links" to="/Services">Services</NavLink>
                 <NavLink className="navbar-links" to="/About">About</NavLink>
                 <NavLink className="navbar-links" to="/Gallery">Gallery</NavLink>
                 <NavLink className="navbar-links" to="/Estimate">Estimate</NavLink>
-                <IconContext.Provider value={{color: "white", size: "2em"}}>
+                <IconContext.Provider value={{color: "black", size: "2em"}}>
                     <button className={BarsMenu.barsIcon} onClick={BarsMenuClicked}><FiMenu /></button>
                     <button className={BarsMenu.exitIcon} onClick={BarsMenuClicked}><FiX /></button> 
                 </IconContext.Provider>

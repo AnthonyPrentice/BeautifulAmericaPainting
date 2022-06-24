@@ -1,22 +1,94 @@
 .footer-wrapper{
     padding: 0;
     margin: 0;
-    height: 210px;
+    height: 185px;
     width: 100vw;
 }
 
 .pre-footer {
-    background-color: rgb(58, 58, 58);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: LightGray;
     padding: 0;
     margin: 0;
-    height: 175px;
     width: 100vw;
+    height: 150px;
+    border: solid .5px;
+}
+
+.left-contents, .right-contents{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    width: 40vw;
+    height: 150px;
+}
+
+.center-contents {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 20vw;
+    height: 150px;
+}
+
+.contact, .estimate, .business-hours, .services{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    flex-direction: column;
+    margin: 5px;
+    height: 75px;
+}
+
+.footer-logo {
+    margin-top: 15px; 
+}
+
+.slogan {
+    margin-top: 15px;
+}
+
+h3, ul, li, p{
+    margin: 0;
+    padding: 0;
+    font-size: .85em;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+ul {
+    list-style-type: none;
 }
 
 .footer {
-    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(58, 58, 58);
     padding: 0;
     margin: 0;
-    height: 35px;
+    min-height: 35px;
     width: 100vw;
+}
+
+.copyright {
+    color: white;
+}
+
+@media only screen and (max-width: 630px){
+    .left-contents, .right-contents {
+        display: none;
+    }
+    .center-contents {
+        width: 100vw;
+    }
 }
