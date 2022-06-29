@@ -1,0 +1,9 @@
+.slideshow {
+    width: 100vw;
+    height: 300px;
+    border: solid .5px;
+}
+
+.slideshow-img {
+    width: 100vw;
+}

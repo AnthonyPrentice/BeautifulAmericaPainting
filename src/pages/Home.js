@@ -1,9 +1,12 @@
 import React from 'react'
 
+//components
+import Slideshow from "../components/Slideshow/Slideshow"
+
 function Home(){
     return (
         <div>
-            Home
+            <Slideshow />
         </div>
     );
 }
