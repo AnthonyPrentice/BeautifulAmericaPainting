@@ -14,8 +14,8 @@ https://www.youtube.com/watch?v=1wZw7RvXPRU&t=10s&ab_channel=CleverProgrammer
 3) install React Router for path Navigation:
     npm install react-router-dom
 
-4) install meta tags for meta info:
-    npm install react-meta-tags
+4) install react helemt for meta/head info:
+    npm install react-helmet
 
 5) install needed icons:
     npm install react-icons
