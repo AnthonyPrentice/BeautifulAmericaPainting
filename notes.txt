@@ -1,4 +1,35 @@
+----------------------------------run firebase w/ react and other dependencies----------------------------
+
+https://medium.com/swlh/how-to-deploy-a-react-app-with-firebase-hosting-98063c5bf425
+https://www.youtube.com/watch?v=1wZw7RvXPRU&t=10s&ab_channel=CleverProgrammer
+   
+1) install react app:
+    npx create-react-app app
+
+2) same directory initialize firebase: 
+    firebase init
+        **in order for firebase to work with react the public directory needs to be
+        set to "build" for firebase**
+
+3) install React Router for path Navigation:
+    npm install react-router-dom
+
+4) install meta tags for meta info:
+    npm install react-meta-tags
+
+5) install needed icons:
+    npm install react-icons
+
+6) install react transitions for slideshow component:
+    npm install react-transition-group
+
+7) initialize the build folder:
+    npm run build
+
+should be ready to deploy/emulate
+
 ---------------------------------------------website content----------------------------------------------
+
 New Site
 	-Consistent Title across all pages, keep "Exterior and Interior House Painting" with it
 	-nav bar on top of site
@@ -115,24 +146,3 @@ Epoxy Floor
 (Services)
 	Contact Us functionality
 
-
-----------------------------------run firebase w/ react and other dependencies----------------------------
-
-https://medium.com/swlh/how-to-deploy-a-react-app-with-firebase-hosting-98063c5bf425
-https://www.youtube.com/watch?v=1wZw7RvXPRU&t=10s&ab_channel=CleverProgrammer
-   
-1) install react app : npx create-react-app app
-
-2) same directory initialize firebase : firebase init
-    **in order for firebase to work with react the public directory needs to be
-    set to "build" for firebase**
-
-3) install React Router for path Navigation - npm install react-router-dom
-
-4) install meta tags for meta info - npm install react-meta-tags
-
-5) install needed icons - npm install react-icons
-
-5) initialize the build folder - npm run build
-
-should be ready to deploy/emulate
