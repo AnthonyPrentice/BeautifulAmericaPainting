@@ -1,4 +1,5 @@
 import React from 'react'
+import './css/Home.css'
 
 //components
 import Slideshow from "../components/Slideshow/Slideshow"

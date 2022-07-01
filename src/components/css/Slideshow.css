@@ -10,9 +10,8 @@
 
 .slideshow-img {
     width: 750px;
+    vertical-align: top;
     overflow-x: hidden;
-    border: 0;
-    margin: 0;
 }
 
 .btn-next {
