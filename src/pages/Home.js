@@ -5,7 +5,7 @@ import Slideshow from "../components/Slideshow/Slideshow"
 
 function Home(){
     return (
-        <div>
+        <div className='home'>
             <Slideshow />
         </div>
     );

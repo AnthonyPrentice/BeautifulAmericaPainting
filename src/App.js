@@ -17,7 +17,7 @@ import Footer from "./components/Footer"
 import NavBar from "./components/NavBar"
 
 //styles
-import "./styles/App.css"
+import "./App.css"
 
 function App() {
     return (

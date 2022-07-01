@@ -1,7 +1,10 @@
 import React, { useState }from 'react'
-//import {} from 'react-transition-group'
 import Images from './SlideshowData'
-import '../../styles/Slideshow.css'
+import { TransitionGroup, CSSTransition } from 'react-transition-group'
+import { IconContext } from "react-icons";
+import { FiChevronLeft } from 'react-icons/fi'
+import { FiChevronRight } from 'react-icons/fi'
+import '../css/Slideshow.css'
 
 function Slideshow(){
     //current image
@@ -17,9 +20,21 @@ function Slideshow(){
 
     return (
         <span className='slideshow'>
-            <img key={Images[curImg]} src={Images[curImg]} className='slideshow-img' />
-            <button className='btn-next' onClick={SlideshowNext}></button>
-            <button className='btn-prev' onClick={SlideshowPrev}></button>
+
+            {/*Preload images in a hidden div to disable flickering*/}
+            <div className='hidden'><img src={Images[0]} /><img src={Images[1]} /><img src={Images[2]} /></div>
+
+            <TransitionGroup>
+                <CSSTransition className='slideshow-img' key={Images[curImg]}>
+                    <img src={Images[curImg]} />
+                </CSSTransition>
+            </TransitionGroup>
+
+            <IconContext.Provider value={{color: "grey", size: "2em"}}>
+                <button className='btn-next' onClick={SlideshowNext}><FiChevronRight /></button>
+                <button className='btn-prev' onClick={SlideshowPrev}><FiChevronLeft /></button>
+            </IconContext.Provider>
+
         </span>
     );
 }

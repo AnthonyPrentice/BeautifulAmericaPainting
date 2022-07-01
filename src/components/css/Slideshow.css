@@ -1,0 +1,47 @@
+.slideshow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(33, 33, 33);
+    border: solid .5px;
+    margin: 0;
+    padding: 0;
+}
+
+.slideshow-img {
+    width: 750px;
+    overflow-x: hidden;
+    border: 0;
+    margin: 0;
+}
+
+.btn-next {
+    position: absolute;
+    background-color: transparent;
+    border: none;
+    right: 0;
+}
+
+.btn-prev {
+    position: absolute;
+    background-color: transparent;
+    border: none;
+    left: 0;
+}
+
+.enter {
+    opacity: 0;
+}
+
+.exit {
+    display: none;
+}
+
+.enter-done {
+    opacity: 1;
+    transition: ease 2s;
+}
+
+.hidden {
+    display: none;
+}

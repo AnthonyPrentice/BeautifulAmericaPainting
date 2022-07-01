@@ -1,70 +1,148 @@
-# Getting Started with Create React App
+----------------------------------run firebase w/ react and other dependencies----------------------------
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+https://medium.com/swlh/how-to-deploy-a-react-app-with-firebase-hosting-98063c5bf425
+https://www.youtube.com/watch?v=1wZw7RvXPRU&t=10s&ab_channel=CleverProgrammer
+   
+1) install react app:
+    npx create-react-app app
 
-## Available Scripts
+2) same directory initialize firebase: 
+    firebase init
+        **in order for firebase to work with react the public directory needs to be
+        set to "build" for firebase**
 
-In the project directory, you can run:
+3) install React Router for path Navigation:
+    npm install react-router-dom
 
-### `npm start`
+4) install react helemt for meta/head info:
+    npm install react-helmet
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+5) install needed icons:
+    npm install react-icons
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+6) install react transitions for slideshow component:
+    npm install react-transition-group
 
-### `npm test`
+7) initialize the build folder:
+    npm run build
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+should be ready to deploy/emulate
 
-### `npm run build`
+---------------------------------------------website content----------------------------------------------
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+New Site
+	-Consistent Title across all pages, keep "Exterior and Interior House Painting" with it
+	-nav bar on top of site
+	-aesthetic spacing
+	-keep good images, perhaps use stock images
+	-individual block sections for services provided
+		-divide by exterior and interior
+	-possible pages
+		-home
+		-services
+		-about us (talk about local business)
+		-gallery
+		-Locatigit 		-Free Estimatels
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+	-web components
+		-slideshow
+		-reactive buttons (color change)
+		-images of tools/paint brands used
+		-bottom section which basically restates links in nav bar
+	-add fake review
+	-perhaps add links to social medias
+	
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Home (needs to be aesthetic, while conveying important information)
+	Title: 	    Beautiful America Painting
 
-### `npm run eject`
+	Services:   -Exterior and Interior Painting
+		    -drywall and stucco repair
+		    -epoxy garage floors
+		    -pool deck repair and painting
+		    -power washing and color matching
+		    -cabinet painting
+		    -staining
+		    -trim installation and repair
+		    -garage molding replacement
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+	Misc. Info: -Free Estimates
+		    -6022281729
+		    -Licensed | Bonded | Insured
+		    -ROC #318539
+		    -Vallywide
+			-Phoenix, Tempe, Scottsdale, Gilbert, Fountain Hills, Glendale,
+			 Peoria, Surprise, Avondale, Goodyear, Carefree, Cave Creek, Laveen, 
+			 Litchfield Park, Anthem, Paradise Valley, Ahwatukee, Chandler, Mesa,
+			 Queen Creek, San Tan Valley
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+	Persuasion: -HOA Approved
+		    -Insurance approved
+		    -Background check on all employees
+		    -E-Verify on all employees
+		    -Non Smokers
+		    -Drug free
+		    -Making America Beautiful one house at a time
+		    -If you are looking for reliable, professional residential Phoenix metro 
+		     painters, this is the right place to start. We give free estimates 
+		     for exterior and interior painting, use Dunn Edwards, Sherwin Williams, 
+		     Frazee, and work valley wide. Call for a free estimate.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Estimates (may or may not rename)
+	Title: 	    Beautiful America Painting
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+	Pitch:	    As the leading Phoenix painter, Beautiful America Painting provides a wide 
+		    array of interior and exterior painting services for residential projects.  
+		    As any good painter knows, there are many ways to bring out the beauty of your 
+		    living space.  A fresh coat of paint can do wonders for a room or your home. 
+		    If you are looking to liven up the atmosphere, a change of color(s) can make a 
+		    world of difference.
 
-## Learn More
+		    When searching for a House Painter in Phoenix, quality must be the utmost 
+		    importance.  Paint provides beauty abd elegance, as well as protection from 
+		    elements.  By painting your home, you can add value and make a great first 
+	  	    impression...what realtors call 'Curb appeal" which is essential if you plan on 
+		    selling your home.  However, not every Phoenix painter is dedicated to quality like 
+		    Beautiful America Painting.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+		    Once you contact us, we will set up an agreed upon time to visit you.  At that time,
+		    we will answer any questions, and provide you with a written estimate. Unlike many 
+	   	    other Phoenix painters, we always ask that the homeowner be present at the time of 
+		    the estimate so that any and all concerns can be addressed. 
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+	FAQ:	    -Is there any fee for an estimate?
+		    -Are there any persistent follow up calls, junk mail, or email, from which it is 
+		     impossible to unsubscribe after the estimate?
+		    -How long does it  take to get a free estimate?
+		    -Can I get an estimate on the same day I call?
+		    -If we agree on the price how soon can I start?
+			
+Exterior
+	Title: 	    Beautiful America Painting
+	
+	Steps:	    -How to paint an exterior of a house
+		    -Types of paint used in AZ
+		    -Powerwash
+		    -Protect Property
+		    -Caulking
+		    -Stucco repairs
+		    -scraping and priming
+		    -application
 
-### Code Splitting
+Interior
+	Title: 	    Beautiful America Painting
+	
+	Content:	    -Interior Painting
+		    -Paint to use
+		    -How to choose a paint color for interior painting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Picture Gallery
+	Images
 
-### Analyzing the Bundle Size
+Epoxy Floor
+	Title:	    Epoxy Garage floor
+	Content:	    stuff
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+(Services)
+	Contact Us functionality
 
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)

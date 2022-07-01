@@ -4,8 +4,8 @@ import { IconContext } from "react-icons";
 import { FiMenu } from "react-icons/fi";
 import { FiX } from "react-icons/fi";
 
-import "../styles/NavBar.css"
-import Logo from "../img/Logo.png"
+import "./css/NavBar.css"
+import Logo from "./img/Logo.png"
 
 function NavBar() {
     //dynamic components: bars-icon, exit-icon, bars-menu
@@ -44,7 +44,7 @@ function NavBar() {
                 <NavLink className="navbar-links" to="/About">About</NavLink>
                 <NavLink className="navbar-links" to="/Gallery">Gallery</NavLink>
                 <NavLink className="navbar-links" to="/Estimate">Estimate</NavLink>
-                <IconContext.Provider value={{color: "black", size: "2em"}}>
+                <IconContext.Provider value={{color: "white", size: "2em"}}>
                     <button className={BarsMenu.barsIcon} onClick={BarsMenuClicked}><FiMenu /></button>
                     <button className={BarsMenu.exitIcon} onClick={BarsMenuClicked}><FiX /></button> 
                 </IconContext.Provider>
