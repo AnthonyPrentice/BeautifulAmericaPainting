@@ -22,17 +22,27 @@ function Slideshow(){
         <span className='slideshow'>
 
             {/*Preload images in a hidden div to disable flickering*/}
-            <div className='hidden'><img src={Images[0]} /><img src={Images[1]} /><img src={Images[2]} /></div>
+            <div className='hidden'><img src={Images[0].img} /><img src={Images[1].img} /><img src={Images[2].img} /></div>
+            
+            <TransitionGroup className='transition-wrapper-img'>
+                <CSSTransition className='slideshow-img' key={Images[curImg].img}>
+                    <img src={Images[curImg].img} />
+                </CSSTransition>
+            </TransitionGroup>
 
-            <TransitionGroup>
-                <CSSTransition className='slideshow-img' key={Images[curImg]}>
-                    <img src={Images[curImg]} />
+            <TransitionGroup className='transition-wrapper-text'>
+                <CSSTransition className='slideshow-img-text' key={Images[curImg].text}>
+                    <p>{Images[curImg].text}</p>
                 </CSSTransition>
             </TransitionGroup>
 
             <IconContext.Provider value={{color: "grey", size: "2em"}}>
-                <button className='btn-next' onClick={SlideshowNext}><FiChevronRight /></button>
-                <button className='btn-prev' onClick={SlideshowPrev}><FiChevronLeft /></button>
+                <button className='btn-next' onClick={SlideshowNext}>
+                    <FiChevronRight />
+                </button>
+                <button className='btn-prev' onClick={SlideshowPrev}>
+                    <FiChevronLeft />
+                </button>
             </IconContext.Provider>
 
         </span>

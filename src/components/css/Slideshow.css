@@ -6,12 +6,31 @@
     border: solid .5px;
     margin: 0;
     padding: 0;
+    overflow-x: auto;
+}
+
+.transition-wrapper-img {
+}
+
+.transition-wrapper-text {
+    position: absolute;
+    text-align: center;
+    font-size: 2em;
 }
 
 .slideshow-img {
     width: 750px;
     vertical-align: top;
-    overflow-x: hidden;
+    transition: ease 3s;
+    border-left: solid black .5px;
+    border-right: solid black .5px;
+}
+
+.slideshow-img-text {
+    transition: ease 2s;
+    transition-delay: 4s;
+    width: 400px;
+    color: black;
 }
 
 .btn-next {
@@ -36,9 +55,7 @@
     display: none;
 }
 
-.enter-done {
-    opacity: 1;
-    transition: ease 2s;
+.enter-done {    
 }
 
 .hidden {
