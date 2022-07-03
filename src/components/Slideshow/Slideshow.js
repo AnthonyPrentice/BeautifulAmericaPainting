@@ -1,4 +1,4 @@
-import React, { useState }from 'react'
+import React, { useState, useEffect }from 'react'
 import Images from './SlideshowData'
 import { TransitionGroup, CSSTransition } from 'react-transition-group'
 import { IconContext } from "react-icons";
@@ -11,12 +11,21 @@ function Slideshow(){
     const [curImg, setCurImg] = useState(0) 
     
     function SlideshowNext() {
-        setCurImg((curImg+1)%3)
+        setCurImg((curImg+1)%Images.length)
     }
 
     function SlideshowPrev() {
         setCurImg((Images.length-((curImg-1)*-1))%Images.length)
     }
+   
+    function SlideshowAuto() {
+        setCurImg(prevCurImg => (prevCurImg+1)%Images.length)
+    }
+
+    useEffect(() => {
+        const interval = setInterval(SlideshowAuto, 10000);
+        return () => clearInterval(interval);
+    }, []);
 
     return (
         <span className='slideshow'>
