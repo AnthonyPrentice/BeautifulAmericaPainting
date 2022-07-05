@@ -9,17 +9,22 @@
 }
 
 .services-preview-item{
-    min-width: 300px;
+    position: relative;
+    max-width: 300px;
+    min-width: 175px;
     height: 400px;
     background-color: rgb(33, 33, 33);
     border: solid 1px;
     margin: 60px;
+    padding-left: 13.5px;
+    padding-right: 13.5px;
 }
 
 .services-preview-img-wrapper {
-    width: 275px;
+    max-width: 275px;
     height: 165px;
     border: solid 1px;
+    top: 0;
     margin-top: 12.5px;
     margin-left: auto;
     margin-right: auto;
@@ -31,6 +36,33 @@
     height: 100%;
     object-fit: cover;
     object-position: center; 
+}
+
+.services-preview-title {
+    color: white;
+    margin-top: 10px;
+    align-text: center;
+    font-size: 1.5em;
+}
+
+.services-preview-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 125px;
+    height: 35px;
+    background-color: lightgrey;
+    border: solid white 1px;
+    color: black;
+    font-size: 1.5em;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin-top: 335px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 @media only screen and (max-width: 775px){

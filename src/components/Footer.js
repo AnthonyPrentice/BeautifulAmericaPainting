@@ -13,17 +13,21 @@ function Footer(){
                         <p>602-228-1729</p>
                     </span>
                     <span className="services">
-                        <h3>Services</h3>
-                        <ul>
-                            <li>Exterior/Interior Painting</li>
-                            <li>Drywall/Stucco Repair</li>
-                            <li>Epoxy</li>
-                        </ul>
+                        <NavLink to='/Services'>
+                            <h3>Services</h3>
+                            <ul>
+                                <li>Exterior/Interior Painting</li>
+                                <li>Drywall/Stucco Repair</li>
+                                <li>Epoxy</li>
+                            </ul>
+                        </NavLink>
                     </span> 
                 </div>
                 <div className="center-contents">
-                    <img src={Logo} className="footer-logo" width="150" height="75" alt="Logo"/> 
-                    <p className="slogan">Making America Beautiful One House At A Time</p>
+                    <NavLink to='/' className='center-contents'>
+                        <img src={Logo} className="footer-logo" width="150" height="75" alt="Logo"/> 
+                        <p className="slogan">Making America Beautiful One House At A Time</p>
+                    </NavLink>
                 </div>
                 <div className="right-contents">
                     <span className="estimate">

@@ -44,9 +44,9 @@
     width: 325px;
     font-family: arial;
     color: white;
-    -webkit-text-stroke: .75px black;
+    -webkit-text-stroke: 1px black;
     transition: ease 2s;
-    transition-delay: 4s;
+    transition-delay: 3s;
 }
 
 .btn-next {
