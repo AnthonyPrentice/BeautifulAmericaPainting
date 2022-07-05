@@ -38,6 +38,7 @@
     transition: ease 2s;
     border-left: solid black .5px;
     border-right: solid black .5px;
+    filter: blur(1px);
 }
 
 .slideshow-img-text {
