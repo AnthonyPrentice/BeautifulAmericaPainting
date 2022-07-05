@@ -1,0 +1,32 @@
+.services-preview-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    min-height: 400px;
+    background-color: lightgrey;
+    border: solid 1px;
+}
+
+.services-preview-item{
+    min-width: 300px;
+    height: 400px;
+    border: solid 1px;
+    margin: 60px;
+}
+
+.services-preview-img-wrapper {
+    width: 275px;
+    height: 165px;
+    border: solid 1px;
+    margin-top: 12.5px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media only screen and (max-width: 775px){
+    .services-preview-wrapper {
+        flex-direction: column;
+    }     
+}
