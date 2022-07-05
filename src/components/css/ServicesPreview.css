@@ -2,7 +2,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    position: relative;
     width: 100%;
     min-height: 400px;
     background-color: lightgrey;
@@ -12,6 +11,7 @@
 .services-preview-item{
     min-width: 300px;
     height: 400px;
+    background-color: rgb(33, 33, 33);
     border: solid 1px;
     margin: 60px;
 }
@@ -23,6 +23,14 @@
     margin-top: 12.5px;
     margin-left: auto;
     margin-right: auto;
+    border: solid white 1px;
+}
+
+.services-preview-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center; 
 }
 
 @media only screen and (max-width: 775px){
