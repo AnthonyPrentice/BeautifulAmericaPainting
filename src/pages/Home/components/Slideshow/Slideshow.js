@@ -38,13 +38,13 @@ function Slideshow(){
             </div>
             
             <TransitionGroup className='transition-wrapper-img'>
-                <CSSTransition className='slideshow-img' key={Images[curImg].img}>
+                <CSSTransition className='slideshow-img' key={Images[curImg].img} timeout={1}>
                     <img src={Images[curImg].img} alt='slideshow-img' />
                 </CSSTransition>
             </TransitionGroup>
 
             <TransitionGroup className='transition-wrapper-text'>
-                <CSSTransition className='slideshow-img-text' key={Images[curImg].text}>
+                <CSSTransition className='slideshow-img-text' key={Images[curImg].text} timeout={1}>
                     <p>{Images[curImg].text}</p>
                 </CSSTransition>
             </TransitionGroup>

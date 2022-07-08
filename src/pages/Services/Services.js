@@ -1,9 +1,12 @@
 import React from 'react'
+import HeadImage from './components/HeadImage'
+import ServicesContent from './components/ServicesContent'
 
 function Services(){
     return (
         <div>
-            Services
+            <HeadImage />
+            <ServicesContent />
         </div>
     );
 }

@@ -1,7 +1,7 @@
 //libs
 import React from "react"
 import {BrowserRouter as Router, Routes, Route} from "react-router-dom"
-import { helmet } from 'react-helmet'
+import { Helmet } from 'react-helmet'
 
 //pages
 import Home from "./pages/Home/Home"
@@ -22,12 +22,12 @@ import "./App.css"
 function App() {
     return (
         <div className="app">
-            <helmet>
+            <Helmet>
                 <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0" />
                 <link rel="preconnect" href="https://fonts.googleapis.com" />
                 <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true" />
                 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet" /> 
-            </helmet>
+            </Helmet>
             <Router>
                 <Header />
                 <NavBar />
