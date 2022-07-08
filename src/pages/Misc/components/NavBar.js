@@ -4,8 +4,8 @@ import { IconContext } from "react-icons";
 import { FiMenu } from "react-icons/fi";
 import { FiX } from "react-icons/fi";
 
-import "./css/NavBar.css"
-import Logo from "./img/Logo.png"
+import "../css/NavBar.css"
+import Logo from "../img/Logo.png"
 
 function NavBar() {
     //dynamic components: bars-icon, exit-icon, bars-menu

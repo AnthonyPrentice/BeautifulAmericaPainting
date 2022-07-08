@@ -1,6 +1,5 @@
 import React from 'react'
-import ReactDOM from "react-dom";
-import './css/Strip.css'
+import '../css/Strip.css'
 
 function Strip({text}){
     const StripData = [

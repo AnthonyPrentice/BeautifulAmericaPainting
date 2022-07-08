@@ -1,6 +1,6 @@
-import img1 from '../img/Slideshow/pexels-malte-luk-resized.jpg'
-import img2 from '../img/Slideshow/pexels-ksenia-chernaya-resized.jpg'
-import img3 from '../img/Slideshow/pexels-pixabay-resized.jpg'
+import img1 from '../../img/Slideshow/pexels-malte-luk-resized.jpg'
+import img2 from '../../img/Slideshow/pexels-ksenia-chernaya-resized.jpg'
+import img3 from '../../img/Slideshow/pexels-pixabay-resized.jpg'
 
 const Images = [
     {'img': img1,

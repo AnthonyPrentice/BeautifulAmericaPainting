@@ -4,17 +4,17 @@ import {BrowserRouter as Router, Routes, Route} from "react-router-dom"
 import { helmet } from 'react-helmet'
 
 //pages
-import Home from "./pages/Home"
-import Services from "./pages/Services"
-import About from "./pages/About"
-import Gallery from "./pages/Gallery"
-import NotFound from "./pages/NotFound"
-import Estimate from "./pages/Estimate"
+import Home from "./pages/Home/Home"
+import Services from "./pages/Services/Services"
+import About from "./pages/About/About"
+import Gallery from "./pages/Gallery/Gallery"
+import NotFound from "./NotFound"
+import Estimate from "./pages/Estimate/Estimate"
 
 //components
-import Header from "./components/Header"
-import Footer from "./components/Footer"
-import NavBar from "./components/NavBar"
+import Header from "./pages/Misc/components/Header"
+import Footer from "./pages/Misc/components/Footer"
+import NavBar from "./pages/Misc/components/NavBar"
 
 //styles
 import "./App.css"

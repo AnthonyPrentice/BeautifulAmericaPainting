@@ -1,12 +1,11 @@
 import React from 'react'
-import ReactDOM from "react-dom";
 import './css/Home.css'
 
 //components
-import Slideshow from "../components/Slideshow/Slideshow"
-import Strip from "../components/Strip"
-import ServicesPreview from '../components/ServicesPreview'
-import Review from '../components/Review'
+import Slideshow from "./components/Slideshow/Slideshow"
+import Strip from "./components/Strip"
+import ServicesPreview from './components/ServicesPreview'
+import Review from './components/Review'
 
 function Home(){
     return (

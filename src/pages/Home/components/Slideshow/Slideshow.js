@@ -4,7 +4,7 @@ import { TransitionGroup, CSSTransition } from 'react-transition-group'
 import { IconContext } from "react-icons";
 import { FiChevronLeft } from 'react-icons/fi'
 import { FiChevronRight } from 'react-icons/fi'
-import '../css/Slideshow.css'
+import '../../css/Slideshow.css'
 
 function Slideshow(){
     //current image
@@ -31,11 +31,15 @@ function Slideshow(){
         <span className='slideshow'>
 
             {/*Preload images in a hidden div to disable flickering*/}
-            <div className='hidden'><img src={Images[0].img} /><img src={Images[1].img} /><img src={Images[2].img} /></div>
+            <div className='hidden'>
+                <img src={Images[0].img} alt='slideshow-img' />
+                <img src={Images[1].img} alt='slideshow-img' />
+                <img src={Images[2].img} alt='slideshow-img' />
+            </div>
             
             <TransitionGroup className='transition-wrapper-img'>
                 <CSSTransition className='slideshow-img' key={Images[curImg].img}>
-                    <img src={Images[curImg].img} />
+                    <img src={Images[curImg].img} alt='slideshow-img' />
                 </CSSTransition>
             </TransitionGroup>
 
