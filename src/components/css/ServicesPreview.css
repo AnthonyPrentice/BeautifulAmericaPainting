@@ -10,8 +10,7 @@
 
 .services-preview-item{
     position: relative;
-    max-width: 300px;
-    min-width: 175px;
+    width: 280px;
     height: 400px;
     background-color: rgb(33, 33, 33);
     border: solid 1px;
@@ -21,7 +20,7 @@
 }
 
 .services-preview-img-wrapper {
-    max-width: 275px;
+    width: 275px;
     height: 165px;
     border: solid 1px;
     top: 0;
