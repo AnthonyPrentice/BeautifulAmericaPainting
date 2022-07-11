@@ -9,7 +9,7 @@ import Review from './components/Review'
 
 function Home(){
     return (
-        <div className='home'>
+        <div className='home-page'>
             <Slideshow />
             <Strip text={0} />
             <ServicesPreview />

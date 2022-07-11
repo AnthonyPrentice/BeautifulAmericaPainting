@@ -1,111 +1,43 @@
 import React from 'react'
 import '../css/ServicesContent.css'
+import HeadImg from '../img/ServicesContent/pexels-ksenia-chernaya-2-resized.png'
+import ServicesData from './ServicesData'
 
 function ServicesContent(){
     return (
         <div className='services-content-wrapper'>
-            <div className='services-content-item'>
-                <div className='services-content-img-wrapper'>
 
-                </div>
-                <p className='services-content-title'>
-                    test
-                </p>
-                <p className='services-content-description'>
-                    aasdf asdfasdfas dfasdfasdfa sdfasdfas dfas 
-                    dfasdfa sdfasd fasdfasdfasdfasdfa
-                </p>
+            <div className='head-img-wrapper'>
+                <img src={HeadImg} className='head-img' alt='head-img' />
             </div>
-            <div className='services-content-item'>
-                <div className='services-content-img-wrapper'>
 
-                </div>
-                <p className='services-content-title'>
-                    test
-                </p>
-                <p className='services-content-description'>
-                    aasdf asdfasdfas dfasdfasdfa sdfasdfas dfas 
-                    dfasdfa sdfasd fasdfasdfasdfasdfa
+            {ServicesData.map(item => {
+                return (
+                    <div className='services-content-item'>
 
-                </p>
-            </div>
-            <div className='services-content-item'>
-                <div className='services-content-img-wrapper'>
+                        <div className='services-content-img-wrapper'>
+                            <img src={item.img} className='services-content-img' alt='services-content-img' />
+                        </div>
 
-                </div>
-                <p className='services-content-title'>
-                    test
-                </p>
-                <p className='services-content-description'>
-                    aasdf asdfasdfas dfasdfasdfa sdfasdfas dfas 
-                    dfasdfa sdfasd fasdfasdfasdfasdfa
+                        <p className='services-content-title'>
+                            {item.title}
+                        </p>
 
-                </p>
-            </div>
-            <div className='services-content-item'>
-                <div className='services-content-img-wrapper'>
+                        <p className='services-content-description'>
+                            {item.description}
+                        </p>
 
-                </div>
-                <p className='services-content-title'>
-                    test
-                </p>
-                <p className='services-content-description'>
-                    aasdf asdfasdfas dfasdfasdfa sdfasdfas dfas 
-                    dfasdfa sdfasd fasdfasdfasdfasdfa
-
-                </p>
-            </div>
-            <div className='services-content-item'>
-                <div className='services-content-img-wrapper'>
-
-                </div>
-                <p className='services-content-title'>
-                    test
-                </p>
-                <p className='services-content-description'>
-                    aasdf asdfasdfas dfasdfasdfa sdfasdfas dfas 
-                    dfasdfa sdfasd fasdfasdfasdfasdfa
-                </p>
-            </div>
-            <div className='services-content-item'>
-                <div className='services-content-img-wrapper'>
-
-                </div>
-                <p className='services-content-title'>
-                    test
-                </p>
-                <p className='services-content-description'>
-                    aasdf asdfasdfas dfasdfasdfa sdfasdfas dfas 
-                    dfasdfa sdfasd fasdfasdfasdfasdfa
-
-                </p>
-            </div>
-            <div className='services-content-item'>
-                <div className='services-content-img-wrapper'>
-
-                </div>
-                <p className='services-content-title'>
-                    test
-                </p>
-                <p className='services-content-description'>
-                    aasdf asdfasdfas dfasdfasdfa sdfasdfas dfas 
-                    dfasdfa sdfasd fasdfasdfasdfasdfa
-
-                </p>
-            </div>
-            <div className='services-content-item'>
-                <div className='services-content-img-wrapper'>
-
-                </div>
-                <p className='services-content-title'>
-                    test
-                </p>
-                <p className='services-content-description'>
-                    aasdf asdfasdfas dfasdfasdfa sdfasdfas dfas 
-                    dfasdfa sdfasd fasdfasdfasdfasdfa
-
-                </p>
-            </div>
+                        {item.src==='' ? '': 
+                            <a href={item.src} className='services-content-src'>
+                                Modified From |  
+                                <a href='https://creativecommons.org/licenses/by/2.0/' className='license'>
+                                    License
+                                </a>
+                            </a>
+                        }
+                    </div>           
+                )
+            })} 
         </div>
     );
 }

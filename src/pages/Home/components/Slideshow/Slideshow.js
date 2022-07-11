@@ -49,7 +49,7 @@ function Slideshow(){
                 </CSSTransition>
             </TransitionGroup>
 
-            <IconContext.Provider value={{color: "grey", size: "2em"}}>
+            <IconContext.Provider value={{color: "black", size: "2em"}}>
                 <button className='btn-next' onClick={SlideshowNext}>
                     <FiChevronRight />
                 </button>
