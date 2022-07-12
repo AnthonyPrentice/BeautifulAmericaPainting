@@ -4,7 +4,7 @@
     align-items: center;
     flex-wrap: wrap;
     width: 100%;
-    min-height: 400px;
+    min-height: calc(100vh - 905px);
     background-color: lightgrey;
     border: solid 1px;
 }
