@@ -1,9 +1,13 @@
 import React from 'react'
+import './css/About.css'
+import AboutImage from './components/AboutImage'
+import AboutContent from './components/AboutContent'
 
 function About(){
     return (
-        <div>
-            About Us
+        <div className='about-page'>
+            <AboutImage />
+            <AboutContent />
         </div>
     )
 }

@@ -1,53 +1,37 @@
 import React from 'react'
 import { NavLink } from "react-router-dom"
 import '../css/ServicesContent.css'
-import HeadImg from '../img/ServicesContent/pexels-tima-miroshnichenko-resized.png'
 import ServicesData from './ServicesData'
 
 function ServicesContent(){
     return (
         <div className='services-content-wrapper'>
-
-            <div className='head-img-wrapper'>
-                <img src={HeadImg} className='head-img' alt='head-img' />
-                <p className='head-img-description'>
-                    We offer a variety of services to meet the needs of any client. 
-                </p>
-            </div>
-
-            <div className='services-content-item-wrapper'>
-                {ServicesData.map(item => {
-                    return (
-                        <div className='services-content-item'>
-
-                            <div className='services-content-img-wrapper'>
-                                <img src={item.img} className='services-content-img' alt='services-content-img' />
-                            </div>
-
-                            <p className='services-content-title'>
-                                {item.title}
-                            </p>
-
-                            <p className='services-content-description'>
-                                {item.description}
-                            </p>
-
-                            <NavLink to='/Estimate' className='services-content-btn'>
-                                <p>Schedule Now</p>
-                            </NavLink>
-
-                            {item.src==='' ? '': 
-                                <a href={item.src} className='services-content-src'>
-                                    Modified From |  
-                                    <a href='https://creativecommons.org/licenses/by/2.0/' className='license'>
-                                        License
-                                    </a>
+            {ServicesData.map(item => {
+                return (
+                    <div className='services-content-item'>
+                        <div className='services-content-img-wrapper'>
+                            <img src={item.img} className='services-content-img' alt='services-content-img' />
+                        </div>
+                        <p className='services-content-title'>
+                            {item.title}
+                        </p>
+                        <p className='services-content-description'>
+                            {item.description}
+                        </p>
+                        <NavLink to='/Estimate' className='services-content-btn'>
+                            <p className='services-content-btn-text'>Schedule Now</p>
+                        </NavLink>
+                        {item.src==='' ? '': 
+                            <a href={item.src} className='services-content-src'>
+                                Modified From |  
+                                <a href='https://creativecommons.org/licenses/by/2.0/' className='license'>
+                                    License
                                 </a>
-                            }
-                        </div>           
-                    )
-                })} 
-            </div>
+                            </a>
+                        }
+                    </div>           
+                )
+            })} 
         </div>
     );
 }
