@@ -89,6 +89,8 @@ node_modules/
 *.psd
 *.swp
 logos/
+Originals/
+
 
 npm-debug.log*
 yarn-debug.log*
