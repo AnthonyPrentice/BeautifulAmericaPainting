@@ -1,9 +1,13 @@
 import React from 'react'
+import EstimateImage from './components/EstimateImage'
+import EstimateContent from './components/EstimateContent'
+
 
 function Estimate(){
     return (
         <div>
-            Estimate
+            <EstimateImage />
+            <EstimateContent />
         </div>
     )
 }

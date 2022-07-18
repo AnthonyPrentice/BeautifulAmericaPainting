@@ -24,7 +24,7 @@ function AboutContent(){
                     <p className='about-list-item'>318539</p>
                 <p className='about-list-title'>Business Hours</p>
                     <p className='about-list-item'>Monday - Friday</p>
-                    <p className='about-list-item'>9:00AM - 5:00Pm</p>
+                    <p className='about-list-item'>9:00AM - 5:00PM</p>
             </span>
 
             <span className='about-content-title'>Why Us</span>

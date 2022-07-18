@@ -29,13 +29,13 @@
     align-items: center; 
     width: 100%;
     position: absolute;
-    text-align: center;
-    font-size: 2em;
 }
 
 .slideshow-img-text {
     width: 325px;
     font-family: arial;
+    font-size: 2em;
+    text-align: center;
     color: white;
     -webkit-text-stroke: 1px black;
     transition: ease 2s;
@@ -73,6 +73,7 @@
 
 @media only screen and (min-width: 1140px){
     .slideshow-img-text {
-    width: 600px;
-}
+        width: 600px;
+        font-size: 3em
+    }
 }
