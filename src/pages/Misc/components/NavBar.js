@@ -38,7 +38,9 @@ function NavBar() {
     return (
         <div className="navbar-wrapper">
             <div className="navbar">
-                <img src={Logo} className="logo" width="150" height="75" alt="Logo"/>
+                <NavLink className='logo-wrapper' to='/'>
+                    <img src={Logo} className="logo" alt="Logo"/>
+                </NavLink>
                 <NavLink className="navbar-links" to="/">Home</NavLink>
                 <NavLink className="navbar-links" to="/Services">Services</NavLink>
                 <NavLink className="navbar-links" to="/About">About</NavLink>

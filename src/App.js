@@ -16,6 +16,11 @@ import Header from "./pages/Misc/components/Header"
 import Footer from "./pages/Misc/components/Footer"
 import NavBar from "./pages/Misc/components/NavBar"
 
+const SEOKeywords = 'beautiful america painting house interior exterior arizona ' +
+                    'phoenix gilbert scottsdale tempe chandler queen creek vally wide ' +
+                    'free estimate power washing color matching drywall stucco repair ' +
+                    'trim installation epoxy cabinet staining pool deck contractor ';
+
 function App() {
     return (
         <div className="app">
@@ -25,6 +30,7 @@ function App() {
                 <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true" />
                 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet" /> 
                 <title>Beautiful America Painting</title>
+                <meta name='description' content={SEOKeywords}/>
             </Helmet>
             <Router>
                 <Header />
