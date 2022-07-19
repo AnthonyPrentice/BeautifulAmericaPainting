@@ -16,10 +16,9 @@ import Header from "./pages/Misc/components/Header"
 import Footer from "./pages/Misc/components/Footer"
 import NavBar from "./pages/Misc/components/NavBar"
 
-const SEOKeywords = 'beautiful america painting house interior exterior arizona ' +
-                    'phoenix gilbert scottsdale tempe chandler queen creek vally wide ' +
-                    'free estimate power washing color matching drywall stucco repair ' +
-                    'trim installation epoxy cabinet staining pool deck contractor ';
+const SEOKeywords = 'We offer interior painting, exterior painting, and commercial painting. '+
+                    'Beautiful America Painting will work vally wide accross Phoenix, Gilbert, Scottsdale, ' +
+                    'Chandler, and more! Contact now for a FREE estimate!';
 
 function App() {
     return (
@@ -29,7 +28,7 @@ function App() {
                 <link rel="preconnect" href="https://fonts.googleapis.com" />
                 <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true" />
                 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet" /> 
-                <title>Beautiful America Painting</title>
+                <title>Interior & Exterior Painting | Commercial Painting | Vally Wide, Arizona</title>
                 <meta name='description' content={SEOKeywords}/>
             </Helmet>
             <Router>
