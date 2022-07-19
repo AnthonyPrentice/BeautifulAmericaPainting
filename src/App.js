@@ -16,9 +16,6 @@ import Header from "./pages/Misc/components/Header"
 import Footer from "./pages/Misc/components/Footer"
 import NavBar from "./pages/Misc/components/NavBar"
 
-//styles
-import "./App.css"
-
 function App() {
     return (
         <div className="app">
@@ -27,6 +24,7 @@ function App() {
                 <link rel="preconnect" href="https://fonts.googleapis.com" />
                 <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true" />
                 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet" /> 
+                <title>Beautiful America Painting</title>
             </Helmet>
             <Router>
                 <Header />

@@ -3,8 +3,9 @@
     display: flex;
     flex-direction: column;
     width: calc(100% - 60px);
-    padding: 30px;
-    min-height: calc(100vh - 545px);
+    padding-left: 30px;
+    padding-right: 30px;
+    min-height: calc(100vh - 567px);
     background-color: lightgrey;
 }
 

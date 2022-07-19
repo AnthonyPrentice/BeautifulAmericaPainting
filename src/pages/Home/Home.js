@@ -1,9 +1,8 @@
 import React from 'react'
-import './css/Home.css'
 
 //components
 import Slideshow from "./components/Slideshow/Slideshow"
-import Strip from "./components/Strip"
+import Strip from "../Misc/components/Strip"
 import ServicesPreview from './components/ServicesPreview'
 import Review from './components/Review'
 

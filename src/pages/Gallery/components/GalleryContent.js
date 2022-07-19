@@ -5,7 +5,7 @@ import GalleryData from './GalleryData'
 function GalleryContent(){
     return (
         <div className='gallery-content-wrapper'>
-
+            
             {GalleryData.map(item => {
                 return (
                     <div className='gallery-content-img-wrapper'>
@@ -13,7 +13,7 @@ function GalleryContent(){
                     </div>
                 )
             })} 
-            
+
         </div>
     );
 }

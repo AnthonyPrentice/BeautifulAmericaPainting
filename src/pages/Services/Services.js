@@ -1,8 +1,7 @@
 import React from 'react'
 import ServicesContent from './components/ServicesContent'
-import Strip from '../Home/components/Strip'
+import Strip from '../Misc/components/Strip'
 import HeadImage from './components/HeadImage'
-import './css/Services.css'
 
 function Services(){
     return (

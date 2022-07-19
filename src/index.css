@@ -28,6 +28,6 @@ body {
 .content {
     padding: 0;
     margin: 0;
-    min-height: calc(100vh - 295px);
+    min-height: calc(100vh - 317px);
     width: 100%;
 }

@@ -23,7 +23,10 @@ https://www.youtube.com/watch?v=1wZw7RvXPRU&t=10s&ab_channel=CleverProgrammer
 6) install react transitions for slideshow component:
     npm install react-transition-group
 
-7) initialize the build folder:
+7) install emailjs for react notifications:
+    npm install @emailjs/browser --save
+
+8) initialize the build folder:
     npm run build
 
 should be ready to deploy/emulate

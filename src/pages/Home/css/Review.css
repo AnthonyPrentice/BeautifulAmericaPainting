@@ -6,17 +6,19 @@
     width: 100%;
     height: 200px;
     background-color: black;
+    z-index: -2;
 }
 
 .review-img {
+    position: absolute;
     width: 100%;
     height: 200px;
     object-fit: cover;
     object-position: center; 
+    z-index: -1;
 }
 
 .review-text {
-    position: absolute;
     width: 325px;
     font-family: arial;
     font-size: 1.5em;

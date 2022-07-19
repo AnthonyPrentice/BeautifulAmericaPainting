@@ -1,4 +1,5 @@
 .gallery-img-wrapper {
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -7,14 +8,15 @@
 }
 
 .gallery-img {
+    position: absolute;
     width: 100%;
     height: 100%;
     object-fit: cover;
     object-position: center;
+    z-index: -1;
 }
 
 .gallery-img-description {
-    position: absolute;
     font-size: 3em;
     font-family: arial;
     text-align: center;

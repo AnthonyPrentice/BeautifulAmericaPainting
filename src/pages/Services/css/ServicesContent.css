@@ -4,7 +4,7 @@
     align-items: center;
     flex-wrap: wrap;
     width: 100%;
-    min-height: calc(100vh - 575px);
+    min-height: calc(100vh - 597px);
     background-color: lightgrey;
 }
 
@@ -17,9 +17,11 @@
     background-color: rgb(33, 33, 33);
     border: solid 1px;
     margin: 30px;
+    z-index: 0
 }
 
 .services-content-img-wrapper {
+    position: absolute;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -27,6 +29,7 @@
     height: 150px;
     margin-top: 12.5px;
     background-color: white;
+    z-index: 1;
 }
 
 .services-content-img {
@@ -80,7 +83,6 @@
 }
 
 .services-content-src {
-    position: absolute;
     margin-top: 150px;
     margin-left: 120px;
     color: white;
@@ -88,6 +90,7 @@
     font-family: arial;
     font-weight: normal;
     text-decoration: none;
+    z-index: 2;
 }
 
 .license {
