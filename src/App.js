@@ -17,7 +17,7 @@ import Footer from "./pages/Misc/components/Footer"
 import NavBar from "./pages/Misc/components/NavBar"
 
 const SEOKeywords = 'Beautiful America Painting offers interior, exterior, and commercial painting. ' +
-                    'We\'ll work vally wide accross Phoenix, Gilbert, Scottsdale, Chandler, and more! ' +
+                    'We\'ll work valley wide accross Phoenix, Gilbert, Scottsdale, Chandler, and more! ' +
                     'Contact now for a FREE estimate!';
 
 function App() {
@@ -28,7 +28,7 @@ function App() {
                 <link rel="preconnect" href="https://fonts.googleapis.com" />
                 <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true" />
                 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet" /> 
-                <title>Interior & Exterior Painting | Commercial Painting | Vally Wide, Arizona</title>
+                <title>Interior & Exterior Painting | Commercial Painting | Valley Wide, Arizona</title>
                 <meta name='description' content={SEOKeywords}/>
             </Helmet>
             <Router>
