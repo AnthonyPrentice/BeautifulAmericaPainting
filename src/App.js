@@ -16,9 +16,9 @@ import Header from "./pages/Misc/components/Header"
 import Footer from "./pages/Misc/components/Footer"
 import NavBar from "./pages/Misc/components/NavBar"
 
-const SEOKeywords = 'We offer interior painting, exterior painting, and commercial painting. '+
-                    'Beautiful America Painting will work vally wide accross Phoenix, Gilbert, Scottsdale, ' +
-                    'Chandler, and more! Contact now for a FREE estimate!';
+const SEOKeywords = 'Beautiful America Painting offers interior, exterior, and commercial painting. ' +
+                    'We\'ll work vally wide accross Phoenix, Gilbert, Scottsdale, Chandler, and more! ' +
+                    'Contact now for a FREE estimate!';
 
 function App() {
     return (
