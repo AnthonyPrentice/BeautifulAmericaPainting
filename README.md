@@ -31,6 +31,10 @@ https://www.youtube.com/watch?v=1wZw7RvXPRU&t=10s&ab_channel=CleverProgrammer
 
 should be ready to deploy/emulate
 
+**
+admin: anthony.prentice1@gmail.com
+custom domain: housepaintingaz.com
+
 ---------------------------------------------website content----------------------------------------------
 
 New Site
