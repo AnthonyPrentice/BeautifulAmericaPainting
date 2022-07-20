@@ -83,6 +83,8 @@
 }
 
 .services-content-src {
+    width: 105px;
+    height: 10px;
     margin-top: 150px;
     margin-left: 120px;
     color: white;
