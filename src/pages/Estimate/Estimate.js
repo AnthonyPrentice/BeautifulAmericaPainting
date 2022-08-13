@@ -5,7 +5,7 @@ import EstimateContent from './components/EstimateContent'
 
 function Estimate(){
     return (
-        <div>
+        <div className='estimate-page'>
             <EstimateImage />
             <EstimateContent />
         </div>

@@ -38,7 +38,7 @@ function AboutContent(){
             </span> 
 
             <span className='about-content-title'>Supported Locations</span>
-            <span className='about-content-paragraph'>
+            <span className='about-content-paragraph locations'>
                     <p className='about-list-title'>Vally Wide:</p> 
                     <p className='about-list-item'>Ahwatukee</p>
                     <p className='about-list-item'>Anthem</p>
